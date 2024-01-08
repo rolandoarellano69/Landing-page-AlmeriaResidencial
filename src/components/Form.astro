@@ -1,0 +1,62 @@
+---
+import { RiPhoneFill } from "react-icons/ri";
+import { RiFacebookBoxFill } from "react-icons/ri";
+import { RiInstagramFill } from "react-icons/ri";
+
+const iFrameStyle = {
+  height: "75vh",
+  width: "100%",
+  border: "none",
+};
+---
+
+  <div id="contacto" class="container px-5 py-8 mx-auto">
+<section class="bg-primary text-white body-font">
+  <div class="container px-5 py-8 mx-auto">
+    <div class="flex flex-col items-center">
+      <h1 class="text-3xl font-bold text-center mb-4">
+        ¿Quieres contactar con nosotros?
+      </h1>
+      <p class="text-lg text-gray-400 leading-relaxed text-center mb-8">
+        Si te interesó{" "}
+        <span class="border-b-3 border-secondary"> Almería Residenciales</span>
+        , no dudes en contactarnos.
+      </p>
+
+      <div class="flex items-center gap-4 mb-8">
+        <a
+          href="https://www.facebook.com/AlmeriaResidenciales"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="flex items-center gap-2 px-4 py-3 rounded-lg text-white bg-secondary hover:bg-gray-800"
+        >
+          <RiFacebookBoxFill class="text-2xl mr-2" />
+          Facebook
+        </a>
+        <a
+          href="https://www.instagram.com/almeriaresidenciales/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="flex items-center gap-2 px-4 py-3 rounded-lg text-white bg-secondary hover:bg-gray-800"
+        >
+          <RiInstagramFill class="text-2xl mr-2" />
+          Instagram
+        </a>
+        <a
+          href="tel:6631138555"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="flex items-center gap-2 md:px-4 md:py-3 rounded-lg text-white bg-secondary hover:bg-gray-800"
+        >
+          <RiPhoneFill class=" text-2xl" />
+          663 113 8555
+        </a>
+      </div>
+   
+    </div>
+    <iframe
+      style={iFrameStyle}
+      src="https://forms.zohopublic.com/obrgroup/form/Almeria1/formperma/-As2Op_qHTeI3KCDQQ4te9uFcdcgR_c9fq4WI3N6EQ8"
+      title="Contact Form"></iframe>
+  </div>
+</section>
