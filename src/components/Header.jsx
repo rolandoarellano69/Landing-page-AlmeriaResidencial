@@ -10,6 +10,10 @@ const Header = () => {
 
   const [isMenu, setIsMenu] = useState(false);
 
+  const handleLinkClick = () => {
+    setIsMenu(false);
+  }
+
   return (
     <nav id="header-nav" className='bg-transparent w-full md:border-0 fixed top-0 z-50'>
       <div className='items-center px-4 max-w-screen-xl mx-auto md:flex md:px-8'>
@@ -35,13 +39,13 @@ const Header = () => {
             </button>
           </div>
         </div>
-        <div className={` flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${isMenu ? 'block' : 'hidden'}`}>
+        <div className={` flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${isMenu ? 'block' : 'hidden'}`} >
           <ul className="justify-end items-center space-y-8 md:flex md:space-x-6 md:space-y-0">
             {
               navegation.map((item, idx) => {
                 return (
                   <li key={idx} className="text-gray-100 hover:text-red-300  transition-colors">
-                    <a href={item.id}>
+                    <a href={item.id} onClick={handleLinkClick}>
                       {item.title}
                     </a>
                   </li>
