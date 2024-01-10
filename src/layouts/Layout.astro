@@ -1,29 +1,41 @@
 ---
-
-
-import "@fontsource-variable/onest"
+import "@fontsource-variable/onest";
 
 interface Props {
   description: string;
   title: string;
 }
 
-const {description, title } = Astro.props;
+
+const { description, title } = Astro.props;
+
+
+
 ---
 
 <!doctype html>
 <html lang="es">
   <head>
+     
     <meta charset="UTF-8" />
-    <meta name="google-site-verification" content="VTKxkp1gmb9DXHwHjUxegIaC0DMgXkN8V5wBd-UBezU" />
-    <meta name="description" content={description}/>
-    <meta name="viewport" content="width=device-width" />
+    <meta
+      name="google-site-verification"
+      content="VTKxkp1gmb9DXHwHjUxegIaC0DMgXkN8V5wBd-UBezU"
+    />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width" /> 
     <meta name="theme-color" content="#0F3A5D" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>{title}</title>
+ <script src="/src/lib/facebookPixel.js" defer>
+
+ </script>
   </head>
   <body>
     <slot />
+    <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=2063571980687353&ev=PageView&noscript=1"
+      /></noscript>
   </body>
 </html>
 <style is:global>
@@ -43,8 +55,8 @@ const {description, title } = Astro.props;
     border-radius: 10px;
   }
   html {
-    font-family: 'Onest Variable', system-ui, sans-serif;
-    background: #0F3A5D;
+    font-family: "Onest Variable", system-ui, sans-serif;
+    background: #0f3a5d;
     background-size: 224px;
     scroll-behavior: smooth;
   }
@@ -63,37 +75,36 @@ const {description, title } = Astro.props;
     background-image: url("./img/isotipo.svg");
     background-repeat: no-repeat;
     background-position: center;
-		
-    background-size:60%;
+
+    background-size: 60%;
   }
 
-	.bg-isoOnda{
-		background-image: url("./img/onditas almeria-01.svg");
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size:cover;
-	}
+  .bg-isoOnda {
+    background-image: url("./img/onditas almeria-01.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
 
   p {
-    color: rgba(255, 255, 255,0,9);
+    color: rgba(255, 255, 255, 0, 9);
     line-height: 1.4;
     margin-bottom: 1rem;
     font-size: 1.1rem;
-    letter-spacing: .5px;
+    letter-spacing: 0.5px;
   }
-#header-nav{
-  animation: blur linear both;
-  animation-timeline: scroll();
-  animation-range:0 500px;
-}
-@keyframes blur {
-  to {
-    box-shadow: 0px 5px 50px -5px rgba(0, 0, 100%, 0.1),
-  0px 0px 0 1px rgba(0,0,0.3);
-    background: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(10px);  
-
+  #header-nav {
+    animation: blur linear both;
+    animation-timeline: scroll();
+    animation-range: 0 500px;
   }
-  
-}
+  @keyframes blur {
+    to {
+      box-shadow:
+        0px 5px 50px -5px rgba(0, 0, 100%, 0.1),
+        0px 0px 0 1px rgba(0, 0, 0.3);
+      background: rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(10px);
+    }
+  }
 </style>
