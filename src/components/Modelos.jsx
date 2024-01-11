@@ -7,7 +7,7 @@ function Modelos() {
       <div className="md:grid md:grid-cols-2 grid grid-cols-1 grid-rows-1">
         <div className="bg-secondary bg-isoOnda flex justify-center items-center">
           <div>
-            <h1 className="text-white font-bold text-center text-3xl md:text-3xl lg:text-6xl mt-12">PLANTA <br />ARQUITECTONICA</h1>
+            <h1 className="text-white font-bold text-center text-3xl md:text-3xl lg:text-6xl mt-12">PLANTA <br />ARQUITECTÓNICA</h1>
             <img src="/img/NIVEL 1 ALMERIA.png" alt="Nivel 1 de Almería Residencial" className='w-full max-w-sm mx-auto mt-[1rem]' />
           </div>
         </div>
