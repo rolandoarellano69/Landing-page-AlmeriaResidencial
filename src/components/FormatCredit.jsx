@@ -20,7 +20,7 @@ function FormatCredit() {
       </h1>
 
       <div className="md:grid md:grid-cols-2 grid grid-cols-1 grid-rows-1 ">
-        <div className="row-start-1 m-[4rem]">
+        <div className="row-start-1 m-[1rem]">
           <img src="/img/familia2.jpeg" alt="Fachadas de Almeria Residencial" className=" rounded-3xl mx-auto" />
         </div>
         <div className="">
