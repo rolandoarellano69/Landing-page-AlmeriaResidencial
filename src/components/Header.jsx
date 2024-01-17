@@ -19,7 +19,7 @@ const Header = () => {
       <div className='items-center px-4 max-w-screen-xl mx-auto md:flex md:px-8'>
         <div className='flex items-center  justify-between py-3 md:py-5 md:block'>
           <a href='/' >
-            <img src="/img/logoBlanco.png" alt="logo de almeria" className='w-32 h-24 md:w-34 md:h-34' />
+            <img src="/img/logoBlanco.png" alt="logo de almeria" className='w-28  md:w-34 ' />
           </a>
           <div className='md:hidden flex justify-between items-center '>
             <button className="text-gray-100 outline-none p-2 rounded-md focus:border-gray-400 focus:border top-3 left-3"
